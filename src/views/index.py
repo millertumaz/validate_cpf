@@ -9,7 +9,7 @@ from controller.index import ValidateCPF
 print('\n*To exit type "exit"*\n')
 while True:  
 
-    cpfInput = input('Insert the cpf (only number): ')
+    cpfInput = input('Insert the cpf (only numberr): ')
 
     if cpfInput == 'exit':
         sys.exit()
