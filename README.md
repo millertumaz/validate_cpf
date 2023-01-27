@@ -9,4 +9,4 @@ Install mkdocs and run the command:
     mkdocs serve
 ```
 
-And then the site will start at the address ```sh http://127.0.0.1:8000/?```
+And then the site will start at the address ```http://127.0.0.1:8000/?```
