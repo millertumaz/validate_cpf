@@ -1,13 +1,15 @@
+"""Interaction with user."""
 import sys
 from pathlib import Path
+
+from controller.index import ValidateCPF
+
 file = Path(__file__).resolve()
 parent, root = file.parent, file.parents[1]
 sys.path.append(str(root))
 
-from controller.index import ValidateCPF
-
 print('\n*To exit type "exit"*\n')
-while True:  
+while True:
 
     cpfInput = input('Insert the cpf (only numberr): ')
 
