@@ -8,5 +8,4 @@ Install mkdocs with your package manager and run the command:
 ```sh
     mkdocs serve
 ```
-
-And then the site will start at the address ```http://127.0.0.1:8000/?```
+And then the site will start at the address http://127.0.0.1:8000/?.

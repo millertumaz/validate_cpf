@@ -1,23 +1,30 @@
+"""Controller that validates the CPF."""
 import re
 
 
 class ValidateCPF:
+    """Class that validated."""
+
     def __init__(self, cpf):
+        """__init__."""
         self.cpf = cpf
 
     @property
     def cpf(self):
+        """CPF collection from self."""
         return self._cpf
 
     @cpf.setter
     def cpf(self, cpf):
-        self._cpf = self.numberonly(cpf)
+        self._cpf = self.number_only(cpf)
 
     @staticmethod
-    def numberonly(cpf):
+    def number_only(cpf):
+        """Exclude non-numeric characters."""
         return re.sub('[^0-9]', '', cpf)
 
     def validates(self):
+        """Verify digit validation."""
         if not self.cpf:
             return False
 
@@ -30,6 +37,7 @@ class ValidateCPF:
 
     @staticmethod
     def calculate_digits(nine_digits):
+        """Calculate the check digits according to the new first numbers."""
         if not nine_digits:
             return False
 

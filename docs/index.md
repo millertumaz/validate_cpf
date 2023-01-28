@@ -34,7 +34,7 @@ while True:
 
 
 ## Project layout
-    validate_cpf
+    validate_cpf/
         docs/
             index.md
         src/
